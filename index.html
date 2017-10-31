@@ -4,19 +4,49 @@
 
 <!DOCTYPE html>
 <html>
+<head>
+
+<script>
+window.alert("Welcome!");       //welcome msg
+</script>
+
+</head>
+
 <body>
 
-<h2>What Can JavaScript Do?</h2>
+<h2>Testing changing image :D</h2>
 
-<p>JavaScript can change HTML attributes.</p>
+<center>
+<img id="my_img" src="img/white.png" style="width:300px">
 
-<p>In this case JavaScript changes the src (source) attribute of an image.</p>
+<br><br><hr>
 
-<button onclick="document.getElementById('myImage').src='img/on.png'">Turn on the light</button>
+<button onclick="makeItWhite()">Make it White!</button>
+<button onclick="makeItGray()">Make it Gray!</button>
 
-<img id="myImage" src="img/off.png" style="width:100px">
+<br><br><hr>
 
-<button onclick="document.getElementById('myImage').src='img/off.png'">Turn off the light</button>
+<button onclick="makeItSmall()">Make it small!</button>
+<button onclick="makeItBig()">Make it BIG!</button>
 
+<br><br>
+
+<button onclick="makeItNormal()">Normal Size</button>
+
+<br><br><hr>
+
+<button onclick="HideIt()">Hide it!</button>
+<button onclick="ShowIt()">Show it!</button>
+
+<br><br><hr>
+</center>
+
+
+<!-- Placing scripts at the bottom of the <body> element improves the display speed, because script compilation slows down the display. -->
+<script src="js/scripts.js"></script>
+
+<script>
+console.log("Loading finished!");
+</script>
 </body>
 </html>
